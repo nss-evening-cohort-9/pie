@@ -40,7 +40,7 @@ const pies = [
     ingredients: 'Pecans, sugar, butter, flour',
     bakeTemp: 5000,
     drinkPairing: 'Milk',
-    imageURL: 'https://cookiesandcups.com/wp-content/uploads/2018/10/pecanpie-3.jpg',
+    imageUrl: 'https://cookiesandcups.com/wp-content/uploads/2018/10/pecanpie-3.jpg',
     instructor: 'Saul',
     iceCream: 'Vanilla',
   },
@@ -49,7 +49,7 @@ const pies = [
     ingredients: 'lemons, sugar, butter, flour',
     bakeTemp: 5000,
     drinkPairing: 'Water',
-    imageURL: 'https://www.williams-sonoma.com/wsimgs/rk/images/dp/recipe/201851/0020/img38l.jpg',
+    imageUrl: 'https://www.williams-sonoma.com/wsimgs/rk/images/dp/recipe/201851/0020/img38l.jpg',
     instructor: 'Saul',
     iceCream: 'none',
   },
@@ -68,7 +68,10 @@ const pieBuilder = () => {
 //  }
 
   pies.forEach((pie) => {
-    domString += `<h2>${pie.name}</h2>`;
+    domString += '<div class="card">';
+    domString +=   `<h2>${pie.name}</h2>`;
+    domString +=   `<img src=${pie.imageUrl} alt='Image of ${pie.name}' />`
+    domString += '</div>';
   });
   printToDom('pies', domString);
 };
