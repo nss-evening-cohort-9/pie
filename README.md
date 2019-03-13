@@ -1,5 +1,5 @@
 # Pie
-Makes an array of pies.
+Prints a bunch of pies to the screen.  Allows user to filter the pies they see based on the button you click on.
 
 ## Screenshots
 ![image of pies](https://raw.githubusercontent.com/nss-evening-cohort-9/pie/master/screenshots/screenshot.png)
@@ -13,6 +13,8 @@ $ git clone https://github.com/nss-evening-cohort-9/pie/
 $ npm install -g http-server
 ```
 ## Running
-Browse to pie directory and run http server
+```
+$ hs -p 5000
+```
 
-
+in your web browser navigate to `localhost:5000`
